@@ -4100,7 +4100,11 @@ typedef struct _ATOM_FAKE_EDID_PATCH_RECORD
 {
   UCHAR ucRecordType;
   UCHAR ucFakeEDIDLength;       // = 128 means EDID length is 128 bytes, otherwise the EDID length = ucFakeEDIDLength*128
+<<<<<<< HEAD
   UCHAR ucFakeEDIDString[1];    // This actually has ucFakeEdidLength elements.
+=======
+  UCHAR ucFakeEDIDString[];     // This actually has ucFakeEdidLength elements.
+>>>>>>> h/linux-4.14.y
 } ATOM_FAKE_EDID_PATCH_RECORD;
 
 typedef struct  _ATOM_PANEL_RESOLUTION_PATCH_RECORD
